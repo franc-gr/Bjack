@@ -221,7 +221,7 @@ class RolloutPlayer(Player):
         # Epsilon-greedy selection
         ###################################
         r = random.uniform(0, 1)
-        epsilon = 0.35
+        epsilon = 0.5
         if r < epsilon:
             act = random.choice(actions)
             if act not in self.currNode.children:
